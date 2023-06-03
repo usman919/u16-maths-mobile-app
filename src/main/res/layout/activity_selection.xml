@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Math.SelectionActivity"
+    android:orientation="vertical"
+    android:background="@color/light_blue">
+
+    <!-- Back button -->
+    <Button
+        android:id="@+id/back"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/back"/>
+
+
+    <!-- Game selection -->
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/game_selection"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!-- Addition & Subtraction -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="horizontal">
+
+        <!-- Addition -->
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:layout_gravity="center"
+            android:text="@string/minus"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/g_red"
+            android:textSize="100sp"
+            android:textStyle="bold" />
+
+        <!-- Subtraction -->
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:layout_gravity="center"
+            android:text="@string/plus"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/orange"
+            android:textSize="100sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <!-- Division & Multiplication -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="horizontal">
+
+        <!-- Multiplication -->
+        <Button
+            android:id="@+id/division"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:layout_gravity="center"
+            android:text="@string/division"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/purple"
+            android:textSize="100sp"
+            android:textStyle="bold" />
+
+        <!-- Division -->
+        <Button
+            android:id="@+id/multiply"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:layout_gravity="center"
+            android:text="@string/multiply"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/prussian_blue"
+            android:textSize="100sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

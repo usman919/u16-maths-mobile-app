@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Math.GameActivity"
+    android:orientation="vertical"
+    android:background="@color/light_blue">
+
+    <!-- Score & Question Count holder -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <!-- Score -->
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/score"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/light_blue"/>
+
+        <!-- Question count -->
+        <TextView
+            android:id="@+id/questionCount"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/questionCount"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:background="@color/light_blue"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <!-- Timer holder -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:orientation="vertical">
+
+        <!-- Timer -->
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/timer"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <!-- Questions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <!-- Question -->
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/question"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <!-- Input -->
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="@string/input_hint"
+            android:textSize="25sp"
+            android:autofillHints=""
+            android:inputType="numberSigned" />
+
+        <!-- Enter button -->
+        <Button
+            android:id="@+id/enter_btn"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/enter_btn"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/green"/>
+
+    </LinearLayout>
+
+</LinearLayout>

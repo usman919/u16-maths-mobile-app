@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Math.MenuActivity"
+    android:orientation="vertical"
+    android:background="@color/light_blue">
+
+        <!-- Title & tagline -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="120dp"
+                android:layout_marginBottom="120dp"
+                android:gravity="center"
+                android:text="@string/title"
+                android:textColor="@android:color/black"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+            <!-- Tagline -->
+            <TextView
+                android:id="@+id/tagline"
+                android:layout_marginBottom="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/tagline"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Play -->
+            <Button
+                android:id="@+id/play"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center"
+                android:text="@string/play"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@color/green"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <!-- Scoreboard -->
+            <Button
+                android:id="@+id/scoreboard"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center"
+                android:text="@string/scoreboard"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@color/orange"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center"
+                android:text="@string/exit"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/red"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+</LinearLayout>
